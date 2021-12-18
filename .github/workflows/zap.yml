@@ -4,7 +4,10 @@ env:
   URI: http://bpcalapp-dev.eu-west-1.elasticbeanstalk.com         
   
 on:
-  workflow_dispatch:                  # manually triggered
+  push:
+    branches:
+    - master
+  #workflow_dispatch:                  # manually triggered
 
 jobs:
 
