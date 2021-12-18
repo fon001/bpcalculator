@@ -1,7 +1,10 @@
 name: k6
 
 on:
-  workflow_dispatch:        # manually triggered
+  push:
+    branches:
+    - master
+  #workflow_dispatch:        # manually triggered
 
 jobs:
 
